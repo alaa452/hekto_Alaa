@@ -1,0 +1,285 @@
+/*start public style*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2500px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0D0E43;
+    font-family: "Lato", sans-serif;
+
+    transition: 0.4s;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --primary: #FB2E86
+}
+
+button {
+
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: regular;
+}
+
+button:hover {
+    background-color: #9cffff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    gap: 71px;
+    justify-content: center;
+}
+
+/*end public style*/
+
+.header .container {
+    width: 1177px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 40px;
+}
+
+a:hover {
+    color: #9cffff;
+    font-size: 25px;
+}
+
+.first-item:hover .akar {
+    background-color: #9cffff;
+}
+
+.akar {
+    transition: 0.4s;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 44px;
+}
+
+
+.header .list ul {
+    display: flex;
+    gap: 36px;
+}
+
+.header button {
+    border: 0;
+    border-left: 2px solid #E7E6EF;
+}
+
+.header button img {
+
+    margin: 0 13px;
+}
+
+
+
+.header input {
+    border: 0;
+}
+
+.header form {
+    display: flex;
+    border: 2px solid #E7E6EF;
+}
+
+.input-search {
+    height: 40px;
+    display: flex;
+}
+
+.product {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home {
+    color: var(--primary);
+}
+
+.fa-solid.fa-list-ul.menu{
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 920px) {
+
+    .header .list,.header .input-search {
+        display: none;
+    }
+
+    .fa-solid.fa-list-ul.menu{
+        display: block;
+        font-size: 30px;
+        color: #0D0E43;
+        cursor: pointer;
+    }
+}
+
+/*footer style*/
+.footer {
+    background-color: #EEEFFB;
+    padding: 50px 0;
+    margin-top: auto;
+    width: 100%;
+
+}
+
+.footer .container {
+    display: flex;
+    max-width: 1177px;
+    margin: 105.51px auto 0;
+    padding: 0 20px;
+}
+
+.footer .row .right-footer .row {
+    gap: 89px;
+}
+
+.footer .left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 34.43px;
+}
+
+.footer .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 46.65px;
+}
+
+.footer .left-side-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 23.32px;
+}
+
+.footer .center {
+    display: flex;
+    flex-direction: column;
+    gap: 46.65px;
+}
+
+.footer .center-items ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 23.32px;
+}
+
+.footer .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 46.65px;
+}
+
+.footer .right-side-items ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 23.32px;
+}
+
+.footer form {
+    display: flex;
+}
+
+.footer input {
+    width: 242px;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.footer button {
+    width: 135px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input::placeholder {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #8A8FB9;
+}
+
+.bottome-text-left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 13.21px;
+}
+
+.footer a {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #8A8FB9;
+}
+
+.footer button:hover {
+    color: #0D0E43;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    .footer .row {
+        flex-wrap: wrap;
+    }
+
+    .footer .left-footer,
+    .footer .right-footer {
+        flex: 0 0 100%;
+    }
+}
+
+/*end footer style*/
+
+
+.e{
+    margin-top: 300px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: red;
+}
