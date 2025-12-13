@@ -377,6 +377,21 @@ a:hover {
     border-radius: 2px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+        margin-top: 150px;
+    }
+
+    .text-hero-section {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-hero-section h1 {
+        font-size: 24px;
+    }
+}
 /*end hero section*/
 /*start product section*/
 .Featured-Products {
