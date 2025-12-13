@@ -297,6 +297,22 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
+    .footer .left-footer form{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer .left-footer form button{
+        width: 100%;
+    }
+    .footer .left-footer .bottome-text-left-footer{
+        align-items: center;
+        text-align: center;
+    }
+    .footer .right-footer ul{
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 854px) and (max-width: 1726px) {
