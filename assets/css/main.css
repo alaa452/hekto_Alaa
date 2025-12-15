@@ -536,7 +536,9 @@ a:hover {
     border: 1px solid #f0e9e9;
 
 }
-
+.Featured-Products .active-h3 {
+    color: #FFFFFF;
+}   
 .Featured-Products .image-info-active {
     background-color: #2F1AC4;
 }
