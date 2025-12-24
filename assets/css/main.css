@@ -42,7 +42,8 @@ button {
 }
 
 button:hover {
-    background-color: #9cffff;
+    background-color: #00ffff;
+    color: #000000;
     transition: 0.25s;
     cursor: pointer;
 }
@@ -297,19 +298,23 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
-    .footer .left-footer form{
+
+    .footer .left-footer form {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    .footer .left-footer form button{
+
+    .footer .left-footer form button {
         width: 100%;
     }
-    .footer .left-footer .bottome-text-left-footer{
+
+    .footer .left-footer .bottome-text-left-footer {
         align-items: center;
         text-align: center;
     }
-    .footer .right-footer ul{
+
+    .footer .right-footer ul {
         align-items: center;
         text-align: center;
     }
@@ -323,6 +328,7 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
+
     .footer .right-footer .left-side,
     .footer .right-footer .center,
     .footer .right-footer .right-side {
@@ -330,6 +336,7 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
+
     .footer .right-footer .row {
         gap: 66px;
 
@@ -392,6 +399,7 @@ a:hover {
         font-size: 24px;
     }
 }
+
 /*end hero section*/
 /*start product section*/
 .Featured-Products {
@@ -471,6 +479,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .Featured-Products .image-info {
@@ -492,25 +501,30 @@ a:hover {
 
 .Featured-Products .product-image .icons-images {
     display: flex;
+    position: absolute;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 16px;
     padding: 11px 0 0 11px;
-
+    top: 0px;
+    left: 0px;
+    opacity: 0;
 }
+
 
 .Featured-Products .product-image .icons-images img {
     cursor: pointer;
     margin: 0px;
-
 }
 
 .Featured-Products .group {
     background-color: #EEEFFB;
 }
 
-.Featured-Products .active {
-    display: block;
+.Featured-Products .image-button {
+    position: absolute;
+    bottom: 5px;
+    opacity: 0;
 }
 
 .Featured-Products .details {
@@ -521,40 +535,38 @@ a:hover {
     font-weight: medium;
     border-radius: 2px;
     background-color: #08D15F;
+
 }
 
-.Featured-Products .image-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+.Featured-Products .product-card:hover .icons-images,
+.Featured-Products .product-card:hover .image-button {
+    opacity: 1;
+    transition: 0.4s;
 }
-
 .Featured-Products .product-card:hover {
     box-shadow: 0px 0px 0px;
     border: 1px solid #f0e9e9;
 
 }
-.Featured-Products .active-h3 {
+
+.Featured-Products .product-card:hover .active-h3 {
     color: #FFFFFF;
-}   
-.Featured-Products .image-info-active {
+}
+
+.Featured-Products .product-card:hover .image-info-active {
     background-color: #2F1AC4;
 }
 
-.Featured-Products .blue-active {
+.Featured-Products .product-card:hover .blue-active {
     background-color: #FFEAC1;
 }
 
-.Featured-Products .price-info-active span {
+.Featured-Products .product-card:hover .price-info-active span {
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
-.Featured-Products .h3-active {
-    color: #FFFFFF;
-}
+
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
 
@@ -590,3 +602,87 @@ a:hover {
 }
 
 /*end product section*/
+/*start promotional header section*/
+.promotional-header {
+    margin-top: 130px;
+    background-color: #F2F0FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotional-header .row {
+    width: 100%;
+    padding: 40px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promotional-header .container .header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.promotional-header .container .header-left .first-item {
+    font-size: 16px;
+    color: var(--primary);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.promotional-header .container .header-left .second-item {
+    font-size: 16px;
+    color: #8A8FB9;
+    font-family: "Lato", sans-serif;
+    line-height: 28px;
+    max-width: 560px;
+}
+
+.promotional-header .container .header-left button {
+    font-family: "Josefin Sans", sans-serif;
+    width: 135px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.promotional-header .container .header-left h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    font-size: 53px;
+    max-width: 581px;
+    line-height: 170.5%;
+    letter-spacing: 1.5%;
+}
+
+.promotional-header img {
+    width: 100%;
+    max-width: 629px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1788px) {
+    .promotional-header .row {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promotional-header .container .header-left {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promotional-header .container .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
