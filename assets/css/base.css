@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0D0E43;
+    font-family: "Lato", sans-serif;
+
+    transition: 0.4s;
+}
+
+.first-item {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.h2-section {
+    text-align: center;
+    color: #1A0B5B;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 58px;
+    font-family: "Lato", sans-serif;
+
+}
+
+:root {
+    --primary: #FB2E86
+}
+
+
+
+button {
+
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: regular;
+}
+
+button:hover {
+    background-color: #00ffff;
+    color: #000000;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 600;
+}
+
+span {
+    font-family: Lato, "Josefin Sans", sans-serif;
+    font-size: 14px;
+    color: #151875;
+    font-weight: bold;
+}
+
+
+
+.container {
+    width: 55.84%;
+
+}
+
+.row {
+    display: flex;
+    gap: 71px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons-images {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 11px 0 0 11px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.icons-images img {
+    cursor: pointer;
+    margin: 0px;
+}
+
+.background-color {
+    background-color: #F5F6F8;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.row-flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-2 {
+    color: #151875;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Josefin Sans";
+}
