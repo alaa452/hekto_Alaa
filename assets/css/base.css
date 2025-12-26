@@ -125,7 +125,7 @@ span {
     flex-wrap: wrap;
 }
 
-.row-flex-column {
+.flex-column {
     flex-direction: column;
 }
 
@@ -144,4 +144,13 @@ span {
     font-size: 42px;
     font-weight: bold;
     font-family: "Josefin Sans";
+}
+
+.gap-29px {
+    gap: 29px;
+}
+
+.Scale:hover {
+    transform: scale(1.15);
+    z-index: 10;
 }

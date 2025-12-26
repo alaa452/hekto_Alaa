@@ -747,4 +747,89 @@ a:hover {
 }
 
 /*end the Leatest Product*/
+/*start the Shopex Offer*/
+
+
+
+.Shopex-offer .row .Cards-shopex {
+    display: flex;
+    gap: 28px;
+}
+
+.Shopex-offer .container .shopex-offer-card {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0e9e9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 27px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 270px;
+    max-height: 320px;
+    transition: 0.3s;
+}
+
+.Shopex-offer .container .shopex-offer-text p {
+    color: rgba(26, 11, 91, 0.3);
+    width: 217px;
+    height: 85px;
+    text-align: center;
+    line-height: 25.6px;
+    font-family: "Lato";
+}
+
+.Shopex-offer .container .shopex-offer-text h3 {
+    color: #151875;
+    font-size: 22px;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+}
+
+.Shopex-offer .container .shopex-offer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+
+    .Shopex-offer .container .Cards-shopex .shopex-offer-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1815px) {
+
+    .Shopex-offer .container .Cards-shopex .shopex-offer-card {
+        flex: 0 0 calc((100% - 28px) / 2);
+        max-width: none;
+    }
+
+    .Leatest-Products .container .chair-prodcut .chair-image {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1816px) and (max-width: 2000px) {
+
+    .Shopex-offer .container .Cards-shopex .shopex-offer-card {
+        flex: 0 0 calc((100% - 84px) / 4);
+        max-width: none;
+    }
+
+    .Leatest-Products .container .chair-prodcut .chair-image {
+        width: 100%;
+    }
+}
+
+/*end the Shopex Offer*/
+/*start the Trending Product*/
+
+
 
