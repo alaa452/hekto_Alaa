@@ -89,9 +89,10 @@ span {
     width: 1177px;
 
 }
+
 @media screen and (min-width: 0px) and (max-width: 1900px) {
 
-    .container{
+    .container {
         width: 55.35%;
     }
 }
@@ -124,7 +125,7 @@ span {
     background-color: #F5F6F8;
 }
 
-.color-1{
+.color-1 {
     color: var(--secondary);
 }
 
@@ -161,11 +162,15 @@ span {
     gap: 29px;
 }
 
-.gap-8px{
+.gap-8px {
     gap: 8px;
 }
 
-.gap-15px{
+.gap-39px {
+    gap: 39px;
+}
+
+.gap-15px {
     gap: 15px;
 }
 
@@ -178,7 +183,7 @@ span {
     font-family: "Josefin Sans", sans-serif;
 }
 
-.font-family-2{
+.font-family-2 {
     font-family: "Lato", sans-serif;
 }
 
@@ -194,9 +199,28 @@ span {
     font-size: 12px;
 }
 
+.font-size-3{
+    font-size: 16px;
+}
+
+.font-size-4{
+    font-size: 20px;
+}
 .box-shadow-1 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #f0e9e9;
 }
 
+.button-affect {
+    width: 94px;
+    height: 29px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: medium;
+    border-radius: 2px;
+    background-color: #08D15F;
 
+}
+.opacity-0{
+    opacity: 0;
+}

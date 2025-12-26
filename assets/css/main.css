@@ -22,10 +22,12 @@ a:hover {
 }
 
 .header {
+    background-color: white;
     position: fixed;
-    display: flex;
     width: 100%;
-    top: 44px;
+    padding: 15px 0;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -571,7 +573,7 @@ a:hover {
 
 .promotional-header .container .header-right {
     max-width: 706px;
-    
+
 }
 
 .promotional-header img {
@@ -751,7 +753,7 @@ a:hover {
 
 .Shopex-offer .row .Cards-shopex {
     display: flex;
-    gap: 28px;  
+    gap: 28px;
 }
 
 .Shopex-offer .container .shopex-offer-card {
@@ -803,7 +805,7 @@ a:hover {
 @media screen and (min-width: 1051px) and (max-width: 1815px) {
 
     .Shopex-offer .container .Cards-shopex .shopex-offer-card {
-       width: calc((100% - 28px) / 2);
+        width: calc((100% - 28px) / 2);
         max-width: none;
     }
 
@@ -874,4 +876,57 @@ a:hover {
         max-width: none;
     }
 }
+
 /*end Trending-Product Section*/
+
+/* start Top Cetegories Section */
+.Top-Categories .Top-Categories-card .Cards-image {
+    border-radius: 50%;
+    flex: 1 1 100%;
+    width: 100%;
+    position: relative;
+}
+
+.Top-Categories .Top-Categories-card {
+    gap: 27px;
+    width: calc((100% - 117px) / 4);
+    min-height: 345px;
+}
+
+.Top-Categories .image-button {
+    position: absolute;
+    bottom: 24px;
+    transition: 0.4s;
+}
+
+.Top-Categories .Top-Categories-card:hover .image-button {
+    opacity: 1;
+}
+
+.Top-Categories .Top-Categories-card:hover .Cards-image {
+    box-shadow: -12px 4px 0 0 #9574e5,
+        0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 0px) and (max-width: 867px) {
+
+    .Top-Categories .Top-Categories-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 868px) and (max-width: 1615px) {
+
+    .Top-Categories .Top-Categories-card {
+        width: calc((100% - 39px) / 2);
+    }
+}
+
+@media screen and (min-width: 1616px) and (max-width: 1900px) {
+
+    .Top-Categories .Top-Categories-card {
+        width: calc((100% - 117px) / 4);
+    }
+}
+
+/* end Top Categories Section */
