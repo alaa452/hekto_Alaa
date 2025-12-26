@@ -1,4 +1,3 @@
-
 .header .container {
     width: 1177px;
     margin: auto;
@@ -254,7 +253,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 854px) and (max-width: 2100px) {
+@media screen and (min-width: 854px) and (max-width: 1900px) {
 
     .footer .left-footer,
     .footer .right-footer {
@@ -518,9 +517,6 @@ a:hover {
 .promotional-header {
     margin-top: 130px;
     background-color: #F2F0FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .promotional-header .row {
@@ -534,6 +530,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    width: calc((100% - 85px));
     max-width: 581px;
 }
 
@@ -574,6 +571,7 @@ a:hover {
 
 .promotional-header .container .header-right {
     max-width: 706px;
+    
 }
 
 .promotional-header img {
@@ -753,22 +751,21 @@ a:hover {
 
 .Shopex-offer .row .Cards-shopex {
     display: flex;
-    gap: 28px;
+    gap: 28px;  
 }
 
 .Shopex-offer .container .shopex-offer-card {
     background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f0e9e9;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 27px;
     justify-content: center;
     align-items: center;
-    flex: 1 1 270px;
-    max-height: 320px;
+    width: calc((100% - 84) / 4);
+    min-height: 320px;
     transition: 0.3s;
+    width: calc((100% - 84px) / 4);
 }
 
 .Shopex-offer .container .shopex-offer-text p {
@@ -806,7 +803,7 @@ a:hover {
 @media screen and (min-width: 1051px) and (max-width: 1815px) {
 
     .Shopex-offer .container .Cards-shopex .shopex-offer-card {
-        flex: 0 0 calc((100% - 28px) / 2);
+       width: calc((100% - 28px) / 2);
         max-width: none;
     }
 
@@ -819,7 +816,7 @@ a:hover {
 @media screen and (min-width: 1816px) and (max-width: 2000px) {
 
     .Shopex-offer .container .Cards-shopex .shopex-offer-card {
-        flex: 0 0 calc((100% - 84px) / 4);
+        width: calc((100% - 84px) / 4);
         max-width: none;
     }
 
@@ -831,5 +828,50 @@ a:hover {
 /*end the Shopex Offer*/
 /*start the Trending Product*/
 
+.Trending-Product .container .Trending-product-card {
+    width: calc((100% - 87px) / 4);
+    min-height: 350px;
+    transition: 0.3s;
+}
 
+.Trending-Product .container .Cards-image {
+    width: calc((100% - 22px));
+    min-height: 244px;
+    height: auto;
+}
 
+.Trending-Product .price {
+    gap: 12px;
+}
+
+.Trending-Product .container .span42 {
+    color: rgba(26, 11, 91, 0.3);
+}
+
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+
+    .Trending-Product .container .Trending-product-card {
+        width: 100%;
+    }
+
+    .Trending-Product .container .Trending-product-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1615px) {
+
+    .Trending-Product .container .Trending-product-card {
+        width: calc((100% - 29px) / 2);
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 1616px) and (max-width: 2000px) {
+
+    .Trending-Product .container .Trending-product-card {
+        width: calc((100% - 87px) / 4);
+        max-width: none;
+    }
+}
+/*end Trending-Product Section*/

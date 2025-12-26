@@ -45,7 +45,8 @@ ul {
 }
 
 :root {
-    --primary: #FB2E86
+    --primary: #FB2E86;
+    --secondary: #151875;
 }
 
 
@@ -85,8 +86,14 @@ span {
 
 
 .container {
-    width: 55.84%;
+    width: 1177px;
 
+}
+@media screen and (min-width: 0px) and (max-width: 1900px) {
+
+    .container{
+        width: 55.35%;
+    }
 }
 
 .row {
@@ -113,8 +120,12 @@ span {
     margin: 0px;
 }
 
-.background-color {
+.background-color-1 {
     background-color: #F5F6F8;
+}
+
+.color-1{
+    color: var(--secondary);
 }
 
 .section {
@@ -150,7 +161,42 @@ span {
     gap: 29px;
 }
 
+.gap-8px{
+    gap: 8px;
+}
+
+.gap-15px{
+    gap: 15px;
+}
+
 .Scale:hover {
     transform: scale(1.15);
     z-index: 10;
 }
+
+.font-family-1 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.font-family-2{
+    font-family: "Lato", sans-serif;
+}
+
+.font-size-1 {
+    font-size: 14px;
+}
+
+.font-weight {
+    font-weight: 400;
+}
+
+.font-size-2 {
+    font-size: 12px;
+}
+
+.box-shadow-1 {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0e9e9;
+}
+
+
