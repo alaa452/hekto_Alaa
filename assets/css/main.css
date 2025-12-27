@@ -619,6 +619,7 @@ a:hover {
     gap: 19px;
 }
 
+
 .Leatest-Products .row {
     flex-direction: column;
     flex-wrap: wrap;
@@ -717,6 +718,13 @@ a:hover {
     .Leatest-Products .container .chair-prodcut .chair-image {
         width: 100%;
     }
+
+    .Leatest-Products .leatest-product-ul li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1684px) {
@@ -732,6 +740,10 @@ a:hover {
     .Leatest-Products .container .icons-images {
         flex-direction: row;
         top: 150px;
+    }
+
+    .Leatest-Products .leatest-product-ul li {
+        width: calc((100% - 174px) / 4);
     }
 }
 
@@ -986,19 +998,22 @@ a:hover {
     .Leatest-Blog .container .Leatest-Blog-Card {
         width: 60%;
     }
-        .Leatest-Blog .container .Blog-image{
+
+    .Leatest-Blog .container .Blog-image {
         width: 100%;
     }
-        .Leatest-Blog{
+
+    .Leatest-Blog {
         margin-bottom: 40px;
     }
 }
 
 @media screen and (min-width: 1901px) and (max-width: 3000px) {
 
-    .Leatest-Blog .container .Leatest-Blog-Card{
+    .Leatest-Blog .container .Leatest-Blog-Card {
         width: calc((100% - 168px) / 3);
     }
 
 }
+
 /*end Leatest Blog Section */
