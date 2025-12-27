@@ -930,3 +930,75 @@ a:hover {
 }
 
 /* end Top Categories Section */
+
+/* end Top Categories Section */
+/*start Leatest Blog*/
+.Leatest-Blog .container .Leatest-Blog-Card {
+    width: calc((100% - 168px) / 3);
+    transition: 0.3s;
+}
+
+.Leatest-Blog .container .Blog-Cards {
+    gap: 59px;
+}
+
+.Leatest-Blog .container .Leatest-Blog-Card:hover .Leatest-Blog .container .Leatest-Blog-test {
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 14px;
+}
+
+.Leatest-Blog .container .Leatest-Blog-test .text-Blog {
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 14px;
+}
+
+.Leatest-Blog .container .icons-Blog {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 14px;
+}
+
+.Leatest-Blog .container .Blog-image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.Leatest-Blog .container .text-Blog p {
+    color: #72718F;
+    line-height: 30px;
+}
+
+.Leatest-Blog .container .Leatest-Blog-Card:hover h3,
+.Leatest-Blog .container .Leatest-Blog-Card:hover a {
+    color: var(--primary);
+}
+
+.Leatest-Blog .container a:hover {
+    color: var(--primary);
+    font-size: 16px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1900px) {
+
+    .Leatest-Blog .container .Leatest-Blog-Card {
+        width: 60%;
+    }
+        .Leatest-Blog .container .Blog-image{
+        width: 100%;
+    }
+        .Leatest-Blog{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1901px) and (max-width: 3000px) {
+
+    .Leatest-Blog .container .Leatest-Blog-Card{
+        width: calc((100% - 168px) / 3);
+    }
+
+}
+/*end Leatest Blog Section */

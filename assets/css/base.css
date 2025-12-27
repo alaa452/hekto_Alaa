@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 5000px;
+    height: 5700px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -174,8 +174,17 @@ span {
     gap: 15px;
 }
 
+.gap-19px{
+    gap: 19px;
+}
+
 .Scale:hover {
     transform: scale(1.15);
+    z-index: 10;
+}
+
+.Scale-2:hover{
+    transform: scale(1.05);
     z-index: 10;
 }
 
@@ -223,4 +232,16 @@ span {
 }
 .opacity-0{
     opacity: 0;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.a-action{
+    text-decoration: underline;
+}
+
+.padding-bottome-35{
+    padding-bottom: 35px;
 }
